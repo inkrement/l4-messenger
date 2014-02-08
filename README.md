@@ -40,8 +40,7 @@ example of an valid composer.json file:
 	"license": "free like free beer",  
 	"require": {  
 		"laravel/framework": "4.0.*",  
-		"pichkrement/messenger": "dev-master",  
-		"pichkrement/tokenauth": "dev-master"  
+		"pichkrement/messenger": "dev-master"
         },  
 	"autoload": {  
 		"classmap": [  
