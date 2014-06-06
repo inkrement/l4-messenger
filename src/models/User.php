@@ -89,6 +89,7 @@ class User extends \Eloquent implements \Illuminate\Auth\UserInterface, \Illumin
     public function send($receiver, $text, $subject){
 
     	//test preconditions
+    	// $user or $receiver ?
     	if(! get_class($user) === 'Pichkrement\Messenger\Models\User')
     		return false;
 
