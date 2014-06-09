@@ -89,13 +89,12 @@ class User extends \Eloquent implements \Illuminate\Auth\UserInterface, \Illumin
     public function send($receiver, $text, $subject){
 
     	//test preconditions
-    	// $user or $receiver ?
-    	if(! get_class($user) === 'Pichkrement\Messenger\Models\User')
+    	if(! get_class($receiver) === 'Pichkrement\Messenger\Models\User')
     		return false;
 
 
     	//test if there is an conversation between the two members
-    	$con = Conversation::user_filter(array($this, $user));
+    	$con = Conversation::user_filter(array($this, $receiver));
 
     	//create new conversation
     	if (is_null($con)){
@@ -104,7 +103,7 @@ class User extends \Eloquent implements \Illuminate\Auth\UserInterface, \Illumin
 	    	//link users to conversation
 	    	$con->save();
 
-	    	$con->users()->sync(array($user->id, $this->id));
+	    	$con->users()->sync(array($receiver->id, $this->id));
     	}
 
     	
