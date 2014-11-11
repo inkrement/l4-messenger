@@ -42,7 +42,7 @@ class CreateUsersTable extends Migration {
 					$table->string('email', 30)->unique();
 				});
 			}
-			if(!Schema::hasColumn('password', 'email')){
+			if(!Schema::hasColumn('users', 'password')){
 				Schema::table('users', function($table){
 					$table->string('password', 30)->unique();
 				});
