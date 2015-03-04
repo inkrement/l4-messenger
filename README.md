@@ -1,3 +1,6 @@
+> please use https://github.com/cmgmyr/laravel-messenger instead.
+> this package is deprecated.
+
 #L4 Messenger
 
 Basic Messaging System for Laravel4
