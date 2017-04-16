@@ -1,14 +1,14 @@
 > please use https://github.com/cmgmyr/laravel-messenger instead.
 > this package is deprecated.
 
-#L4 Messenger
+# L4 Messenger
 
 Basic Messaging System for Laravel4
 
 ## Introduction
 The main purpose of this package is providing an suited Foundation for extended communication platforms, based on laravel 4 (or compatible frameworks).
 
-##Overview
+## Overview
 You have many users and they want to chat? Couldn't be simplier!
 We extended the standard Laravel User-Model to satisfy the requirements.
 
@@ -22,11 +22,11 @@ We extended the standard Laravel User-Model to satisfy the requirements.
 ![ER-Model](https://googledrive.com/host/0B_FVWRYj6sQ7WG42TVp2U0ZmaDQ)
 
 
-##Requirements
+## Requirements
 
 * Eloquent ORM
 
-##Installation
+## Installation
 
 First of all, integrate the source code into your project. You can do it, by adding the package name to your composer.json file and 
 calling the update function:
